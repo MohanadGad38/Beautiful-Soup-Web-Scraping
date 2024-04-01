@@ -7,3 +7,8 @@ Lib
 1-BeautifulSoup 
 2-lxml 
 3-requests
+
+
+
+
+output in json files 
