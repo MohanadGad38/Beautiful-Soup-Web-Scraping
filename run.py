@@ -12,5 +12,11 @@ soup=BeautifulSoup(htmlT,'lxml')
 top10ActionMovies=soup.find_all('ul',class_='unstyled')
 
 for c in top10ActionMovies:
-    # print(c.h5.text)
-    print(c.a.text)
+    print(c.a.text) #movie name 
+    print(c.p.text) #description 
+
+
+top10ActionMoviesRates=soup.find_all('span',class_='legend')
+for c in top10ActionMoviesRates:
+    print(c.text) #movie rtes 
+
